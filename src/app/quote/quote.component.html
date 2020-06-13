@@ -7,7 +7,9 @@
                 for refference
             </p>
             <div *ngFor='let quote of quotes; let i = index'>
-            <p>{{quote.name}}</p>
+            <li class="card card-body bg-info">{{quote.name}}</li>
+            <button (click)= 'toggleDetails (i)'>Quote..Description</button>
+            <app-quote-details *ngIf='quote.showDescription' [quote]='quote'></app-quote-details>
             </div>
         </div>
     </div>
