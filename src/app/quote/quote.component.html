@@ -6,10 +6,13 @@
             <p>Get inspired by our qoutes and you can also save your quotes 
                 for refference
             </p>
-            <div *ngFor='let quote of quotes; let i = index'>
-            <li class="card card-body bg-info">{{quote.name}}</li>
-            <button (click)= 'toggleDetails (i)'>Quote..Description</button>
-            <app-quote-details *ngIf='quote.showDescription' [quote]='quote'></app-quote-details>
+            <div *ngFor='let quote of quotes; let i = index' class="card-body">
+            <li class="card card-body bg-info">{{quote.name}} <br><br></li>
+            <button (click)= 'toggleDetails (i)' class="btn btn-outline-primary btn-md">Quote..Description</button>
+            
+            <div *ngIf='quote.showDescription'><br>
+                <app-quote-details  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
+            </div>
             </div>
         </div>
     </div>
