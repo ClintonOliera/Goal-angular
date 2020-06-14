@@ -27,6 +27,16 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDescription =! this.quotes[index].showDescription;
   }
 
+  upvotes:number = 0;
+  downvotes: number = 0;
+
+  upvoteButton(i){
+    this.quotes[i].upvotes++;
+  }
+  downvoteButton(i){
+    this.quotes[i].downvotes++;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
