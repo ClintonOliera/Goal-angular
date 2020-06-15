@@ -3,3 +3,14 @@ button {
     align-items: center;
     color: #ff5722;
 }
+.description{
+    padding-top: 2%;
+}
+.form-control{
+    border-radius: 25px;
+    display: flex;
+}
+.dec{
+    background-color: #b922ffa2;
+    color: white;
+}
