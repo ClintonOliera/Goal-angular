@@ -1,27 +1,29 @@
 # Quote
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
+This project was generated with [Angular CLI](https://github.com/ClintonOliera/Goal-angular) 
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Generating working components,pipes and directives
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## BDD
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* user fills the form fields
+* on submit it adds the quote, description, author,details and date psted to the array
+* user is able to upvote or downvote the quote by clickig on the upvote and downvote button
+* user is able to delete a quote
 
-## Running unit tests
+## Author
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Clinton Oliera
 
-## Running end-to-end tests
+## Contact Information
+ * clintonoliera391@gmail.com
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Licence
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* This software is under MIT Licence
